@@ -27,7 +27,7 @@ namespace nothinbutdotnetstore.specs.web
                 sub_departments_repository = the_dependency<DeparmentsRepository>();
                 sub_departments = new List<Department>();
 
-                sub_departments_repository.Stub(x => x.get_the_sub_departments_by("blah")).Return(sub_departments);
+                sub_departments_repository.Stub(x => x.get_the_sub_departments_by(Arg<string>.Is.Anything)).Return(sub_departments);
 
             };
 

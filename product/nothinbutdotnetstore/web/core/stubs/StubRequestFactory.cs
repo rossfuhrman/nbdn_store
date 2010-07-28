@@ -1,3 +1,4 @@
+using System;
 using System.Web;
 
 namespace nothinbutdotnetstore.web.core.stubs
@@ -11,6 +12,12 @@ namespace nothinbutdotnetstore.web.core.stubs
 
         class StubRequest : Request
         {
+            public string get_parameter(string department_name)
+            {
+                throw new NotImplementedException();
+            }
         }
+
+
     }
 }

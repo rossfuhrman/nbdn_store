@@ -12,7 +12,7 @@ namespace nothinbutdotnetstore.tasks.stubs
             return Enumerable.Range(1, 100).Select(x => new Department {name = x.ToString("Department 0")});
         }
 
-        public IEnumerable<Department> get_the_sub_departments_by(string department_name)
+        public IEnumerable<Department> get_the_sub_departments_by(string anything)
         {
             throw new NotImplementedException();
         }
